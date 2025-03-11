@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: aliceblue;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #777;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: white;
+    font-weight: bold;
+}
+
+.cv-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info h1 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.info h3 {
+    font-size: 14px;
+    color: #bbb;
+}
+
+p {
+    color: #aaa;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+}
+
+/* Welcome Box */
+.welcome-box {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: small;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.card h3 {
+    margin: 0;
+    color: white;
+}
+
+.card p {
+    color: #bbb;
+}
+
+/* Circle Icon */
+.circle-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.left {
+    max-width: 300px;
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+}
+
+.middle {
+    max-width: 600px;
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+}
+
+.right {
+    max-width: 300px;
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Specialization Icons */
+.languages-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.softwares-icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Experience Section */
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+/* Stats Boxes */
+.stats {
+    display: flex;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stat-box1 {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.stat-box2 {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+
+
+.stat-box1 p {
+    font-size: 12px;
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+.stat-box2 p {
+    font-size: 12px;
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+/* Work Together Section */
+.work-together {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.work-together .highlight {
+    color: #4a8af4;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.circle-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.nav-links-footer {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links-footer li {
+    display: inline;
+}
+
+.nav-links-footer a {
+    text-decoration: none;
+    color: #777;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-links-footer a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+
+.footer{
+    margin-top: 50px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
