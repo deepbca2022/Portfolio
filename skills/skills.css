@@ -4,6 +4,8 @@ body {
     font-family: cursive;
     background-color: #111;
     color: white;
+   
+   
 }
 
 .navbar {
@@ -59,34 +61,18 @@ body {
 }
 
 .container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-
-.skills-list {
-    display: flex;
-    column-span: 2;
-    align-items: center;
-    background: #373737;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    width: 280px;
-}
-
-.skills{
-    padding: 10px;
     display: block;
     justify-content: center;
     align-items: center;
 }
 
-.skills.img {
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
-    
+.middle {
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+    box-shadow: #454444;
 }
-
