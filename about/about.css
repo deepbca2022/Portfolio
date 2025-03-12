@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: cursive;
     background-color: #111;
     color: white;
 }
@@ -96,19 +96,16 @@ p {
 
 /* Social Links */
 .social-links {
-    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
 }
 
-.social-links a {
+.social-icon p:hover {
+    font-weight: bold;
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 8px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #4a8af4;
+    cursor: pointer;
 }
 
 /* Contact Button */
@@ -134,7 +131,7 @@ p {
 }
 
 .about-me h2 {
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -144,3 +141,48 @@ p {
     margin-bottom: 15px;
 }
 
+
+
+/* Education Section */
+
+.container2 {
+    margin-left: 185px;
+    margin-right: 185px;
+}
+.education-section {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.education-section h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 350px;
+}
+
+.year {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.course {
+    font-size: 18px;
+    color: #4a8af4;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.institution {
+    font-size: 14px;
+    color: #cfcbcb;
+}

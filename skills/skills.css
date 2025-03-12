@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background-color: #111;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #777;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: white;
+    font-weight: bold;
+}
+
+.cv-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #555;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.skills-list {
+    display: flex;
+    column-span: 2;
+    align-items: center;
+    background: #373737;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 280px;
+}
+
+.skills{
+    padding: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills.img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    
+}
+
