@@ -146,7 +146,7 @@ p {
 .circle-icon {
     width: 30px;
     height: 30px;
-    background-color: #333;
+    background-color: #797777;
     border-radius: 50%;
     position: absolute;
     bottom: 10px;
@@ -288,16 +288,6 @@ p {
     color: #4a8af4;
     font-size: 50px;
     font-weight: bold;
-}
-
-.circle-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #333;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
 }
 
 .nav-links-footer {
