@@ -186,3 +186,74 @@ p {
     font-size: 14px;
     color: #cfcbcb;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .cv-button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .container2 {
+        margin: 0 20px;
+    }
+
+    .education-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .education-item {
+        min-width: unset;
+        width: 100%;
+    }
+
+    /* Skills Page Specific */
+    .icons,
+    .languages-icons {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .a1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .middle {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

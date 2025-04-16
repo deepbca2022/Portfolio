@@ -146,3 +146,58 @@ h2 {
     font-size: 14px;
     color: #cfcbcb;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .cv-button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .experience,
+    .container2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .education-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .education-item {
+        min-width: auto;
+        width: 100%;
+    }
+
+    h2, .course {
+        font-size: 20px;
+    }
+
+    .year, .institution, .company, .description {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
