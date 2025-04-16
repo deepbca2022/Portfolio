@@ -169,6 +169,12 @@ body {
 }
 
 @media (max-width: 480px) {
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5px;
+    }
+
+
     .logo {
         font-size: 18px;
     }

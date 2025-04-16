@@ -159,6 +159,11 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5px;
+    }
+
     .navbar {
         flex-direction: column;
         padding: 10px 20px;

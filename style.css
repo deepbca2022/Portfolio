@@ -323,6 +323,11 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5px;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
