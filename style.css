@@ -115,7 +115,7 @@ p {
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: small;
+    font-size: medium;
 }
 
 /* Cards */
@@ -188,6 +188,7 @@ p {
     border-radius: 15px;
     background-color: #1e1e1e;
 }
+
 
 .icon {
     font-size: 30px;
