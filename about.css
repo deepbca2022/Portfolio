@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -75,13 +79,17 @@ body {
     border-radius: 10px;
     text-align: center;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    margin-bottom: 15px;
+    object-fit: cover;
+    display: block;
 }
 
 h2 {
@@ -146,56 +154,163 @@ p {
 /* Education Section */
 
 .container2 {
-    margin-left: 185px;
-    margin-right: 185px;
-    justify-content: center;
-    align-items: flex-start;
+    width: min(1400px, calc(100% - 40px));
+    margin: 0 auto;
 }
+
 .education-section {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     gap: 30px;
     margin-top: 30px;
 }
 
-.education-section h2 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: white;
-}
-
 .education-item {
-    margin-bottom: 20px;
+    flex: 1;
     background-color: #202020;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    min-width: 350px;
+    min-width: 0;
 }
 
 .year {
-    font-size: 18px;
+    font-size: 22px;
     color: #bbb;
+    margin: 0 0 12px 0;
+}
+
+.level {
+    font-size: 16px;
+    color: #cfcbcb;
+    margin: 0 0 25px 0;
 }
 
 .course {
-    font-size: 18px;
+    font-size: 20px;
     color: #4a8af4;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 0 0 20px 0;
 }
 
 .institution {
-    font-size: 14px;
+    font-size: 15px;
     color: #cfcbcb;
+    margin: 0;
+}
+
+.avatar-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    margin: 0 auto 15px auto;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Hi bubble */
+.hi-bubble {
+    position: absolute;
+    top: -15px;
+    right: -30px;
+
+    background: white;
+    color: #222;
+
+    padding: 7px 12px;
+    border-radius: 15px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom left;
+
+    pointer-events: none;
+}
+
+/* Animation triggered by JS */
+.avatar-container.animate img {
+    animation: avatarHello 0.8s ease-in-out;
+}
+
+.avatar-container.animate .hi-bubble {
+    animation: hiBubble 0.8s ease-out;
+}
+
+
+/* Avatar movement */
+@keyframes avatarHello {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translateY(-8px) rotate(-5deg);
+    }
+
+    40% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+
+    60% {
+        transform: translateY(-5px) rotate(-4deg);
+    }
+
+    80% {
+        transform: translateY(-2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+
+/* Hi bubble animation */
+@keyframes hiBubble {
+
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
 }
 
 @media (max-width: 768px) {
-    body{
+
+    body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 5px;
+        overflow-x: hidden;
     }
+
+    /* ================= NAVBAR ================= */
 
     .navbar {
         flex-direction: column;
@@ -215,36 +330,61 @@ p {
         width: 100%;
     }
 
+
+    /* ================= MAIN CONTAINER ================= */
+
     .container {
         flex-direction: column;
-        padding: 20px;
         align-items: center;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
     }
+
+
+    /* ================= PROFILE CARD ================= */
 
     .profile-card {
         width: 100%;
+        max-width: 400px;
         margin-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar-container {
+        margin: 0 auto 15px auto;
     }
 
     .about-me {
         width: 100%;
+        max-width: 600px;
     }
 
+
+    /* ================= EDUCATION ================= */
+
     .container2 {
-        margin: 0 20px;
+        width: calc(100% - 40px);
+        margin: 0 auto;
     }
 
     .education-section {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
         gap: 20px;
     }
 
     .education-item {
-        min-width: unset;
-        width: 100%;
+        width: calc(50% - 10px);
+        min-width: 0;
     }
 
-    /* Skills Page Specific */
+
+    /* ================= SKILLS ================= */
+
     .icons,
     .languages-icons {
         flex-direction: column;
@@ -256,16 +396,27 @@ p {
         align-items: center;
     }
 
-    .container {
-        padding-left: 0;
-        width: 100%;
-    }
-
     .middle {
         width: 90%;
         margin: 0 auto;
     }
 }
+
+@media (max-width: 500px) {
+
+    .education-item {
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+}
+
 /* Hamburger icon */
 .menu-toggle {
     display: none;
@@ -316,4 +467,3 @@ p {
         padding-right: 10px;
     }
 }
-
