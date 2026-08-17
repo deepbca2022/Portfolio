@@ -310,8 +310,7 @@ p {
         overflow-x: hidden;
     }
 
-    /* ================= NAVBAR ================= */
-
+    /* Navbar */
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -330,9 +329,7 @@ p {
         width: 100%;
     }
 
-
-    /* ================= MAIN CONTAINER ================= */
-
+    /* Main container */
     .container {
         flex-direction: column;
         align-items: center;
@@ -341,21 +338,11 @@ p {
         gap: 20px;
     }
 
-
-    /* ================= PROFILE CARD ================= */
-
+    /* Profile */
     .profile-card {
         width: 100%;
         max-width: 400px;
         margin-bottom: 20px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .avatar-container {
-        margin: 0 auto 15px auto;
     }
 
     .about-me {
@@ -363,9 +350,7 @@ p {
         max-width: 600px;
     }
 
-
-    /* ================= EDUCATION ================= */
-
+    /* Education */
     .container2 {
         width: calc(100% - 40px);
         margin: 0 auto;
@@ -378,13 +363,11 @@ p {
     }
 
     .education-item {
-        width: calc(50% - 10px);
+        flex: 0 0 calc(50% - 10px);
         min-width: 0;
     }
 
-
-    /* ================= SKILLS ================= */
-
+    /* Skills */
     .icons,
     .languages-icons {
         flex-direction: column;
@@ -402,10 +385,11 @@ p {
     }
 }
 
+/* Very small phones */
 @media (max-width: 500px) {
 
     .education-item {
-        width: 100%;
+        flex: 0 0 100%;
     }
 
     .container {
